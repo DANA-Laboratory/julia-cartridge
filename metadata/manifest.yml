@@ -8,27 +8,9 @@ Cartridge-Vendor: ivandavid
 Version: '0.3.10'
 Categories:  
   - service
-  - web_framework
 Provides:
   - julia
   - julia-v0.3.10
-Endpoints:
-  - Private-IP-Name: IP
-    Private-Port-Name: PORT
-    Private-Port: 8080
-    Public-Port-Name: PROXY_PORT
-    Protocols: [http, ws]
-    Options: 
-      primary: true 
-    Mappings:
-      - Frontend: ""
-        Backend: ""
-        Options:
-          websocket: true
-  - Private-IP-Name: IP
-    Private-Port-Name: WORKER_PORT
-    Private-Port: 9009
-    Public-Port-Name:  WORKER_PROXY_PORT  
 Scaling:
   Min: 1
   Max: -1
